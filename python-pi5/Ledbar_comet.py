@@ -15,7 +15,7 @@ DELAY = 0.08  # seconds per step (smaller = faster)
 # Brightness of the head, then each tail LED behind it (0.0 to 1.0).
 # Uneven steps look smoother because our eyes judge brightness on a curve.
 # Add more values for a longer tail, e.g. [1.0, 0.4, 0.15, 0.06, 0.02]
-TAIL = [1.0, 0.3, 0.1, 0.03]
+TAIL = [1.0, 0.4, 0.15, 0.06, 0.02]#[1.0, 0.5, 0.1, 0.03]
 
 leds = [PWMLED(pin) for pin in LED_PINS]
 N = len(leds)
