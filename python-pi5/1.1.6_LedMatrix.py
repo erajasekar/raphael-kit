@@ -20,7 +20,7 @@ def displayLetter():
 
 def scrollToDisplayText():
     with canvas(virtual) as draw:
-        text(draw, (0, 0), "Hello, Nice to meet you!", fill="white", font=proportional(CP437_FONT))
+         text(draw, (0, 0), "Hi, JAY  ", fill="white", font=proportional(CP437_FONT))
 
     for offset in range(150):
         virtual.set_position((offset,0))
@@ -30,8 +30,8 @@ def main():
     while True:
         displayRectangle()
         time.sleep(2)
-        displayLetter()
-        time.sleep(2)
+       # displayLetter()
+       # time.sleep(2)
         scrollToDisplayText()
 
 def destroy():

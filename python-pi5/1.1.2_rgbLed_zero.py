@@ -33,8 +33,8 @@ try:
     # Continuously cycle through the defined colors.
     while True:
         for name, color in COLORS:
-            rgb_led.color = color
             print(f"Color set to: {name} {color}")
+            rgb_led.color = color
             sleep(1)
 
 except KeyboardInterrupt:
